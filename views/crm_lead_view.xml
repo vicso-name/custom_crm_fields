@@ -1,0 +1,33 @@
+<odoo>
+  <data>
+
+    <record id="view_crm_lead_form_extra_fields" model="ir.ui.view">
+      <field name="name">crm.lead.form.extra.fields</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+      <field name="arch" type="xml">
+
+        <!-- Вставляем блок после кнопок won/lost -->
+        <xpath expr="//div[@name='button_box']" position="after">
+          <group string="Extra CRM Fields" name="extra_crm_fields" colspan="2">
+
+            <field name="telegram_username"/>
+            <field name="whatsapp_username"/>
+
+            <!-- Заменили старый selection на Many2one -->
+            <field name="status_id"/>
+
+            <field name="lead_source"/>
+            <field name="keyword"/>
+
+            <field name="brochures_received" widget="many2many_tags"/>
+            <field name="rental"/>
+
+          </group>
+        </xpath>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>

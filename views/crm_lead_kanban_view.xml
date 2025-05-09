@@ -1,0 +1,24 @@
+<odoo>
+  <data>
+
+    <record id="crm_lead_kanban_view_custom_status" model="ir.ui.view">
+      <field name="name">crm.lead.kanban.status.override</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>
+      <field name="arch" type="xml">
+
+        <!-- Меняем группировку по stage_id на status_id -->
+        <xpath expr="//kanban" position="attributes">
+          <attribute name="default_group_by">status_id</attribute>
+        </xpath>
+
+        <!-- Добавляем поле status_id рядом со stage_id -->
+        <xpath expr="//field[@name='stage_id']" position="after">
+          <field name="status_id"/>
+        </xpath>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,30 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="crm_brochure_v3" model="crm.brochure">
+            <field name="name">V3</field>
+        </record>
+        <record id="crm_brochure_v5" model="crm.brochure">
+            <field name="name">V5</field>
+        </record>
+        <record id="crm_brochure_v6" model="crm.brochure">
+            <field name="name">V6</field>
+        </record>
+        <record id="crm_brochure_v10" model="crm.brochure">
+            <field name="name">V10</field>
+        </record>
+        <record id="crm_brochure_v11" model="crm.brochure">
+            <field name="name">V11</field>
+        </record>
+        <record id="crm_brochure_v12" model="crm.brochure">
+            <field name="name">V12</field>
+        </record>
+        <record id="crm_brochure_hotel" model="crm.brochure">
+            <field name="name">Hotel</field>
+        </record>
+        <record id="crm_brochure_intro_2025" model="crm.brochure">
+            <field name="name">Intro (2025)</field>
+        </record>
+
+    </data>
+</odoo>
