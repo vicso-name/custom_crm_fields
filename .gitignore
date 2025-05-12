@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Odoo-specific
+*.log
+*.tmp
+*.bak
+*.swp
+*.~*
+
+# macOS / Linux
+.DS_Store
+ehthumbs.db
+Thumbs.db
+
+# VS Code
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+
+# Packages / build artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+.installed.cfg
+
+# Coverage / test
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+pytest_cache/
+
+# Environment files
+.env
+.env.*
+*.secret
+
+# Node/npm
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Custom Odoo / temporary deployment artifacts
+*.zip
+*.tar.gz
+*.pot~

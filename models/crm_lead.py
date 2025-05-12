@@ -7,14 +7,6 @@ class CrmBrochure(models.Model):
 
     name = fields.Char(string="Brochure Name", required=True)
 
-# ===== Кастомные статусы (столбцы в канбане) =====
-class CrmLeadStatus(models.Model):
-    _name = 'crm.lead.status'
-    _description = 'Lead Kanban Status'
-
-    name = fields.Char(string="Stage Name", required=True)
-    sequence = fields.Integer(string="Sequence", default=10)
-    fold = fields.Boolean(string="Folded in Kanban", default=False)
 
 # ===== Расширение модели лида (crm.lead) =====
 class CrmLead(models.Model):
